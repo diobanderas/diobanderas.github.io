@@ -1,0 +1,444 @@
+body{
+    background-color: #282828;
+    font-family: Consolas, 'Courier New', monospace;
+    max-width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.global-width{
+    max-width: 1500px;
+}
+
+.padd-5{
+    padding: 5%;
+}
+
+.text-white{
+    color: white;
+}
+
+.diy-container{
+    min-height: 100vh;
+    max-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diy-container-in{
+    background-color: white;
+    width: 60%;
+    height: 90%;
+    border-radius: 15px;
+    color: #282828;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+    .diy-container-in {
+      width: 89%;
+    }
+  }
+
+.gotop{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    color: black;
+    right: 7%;
+    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 999;
+    border: solid 2px #282828;
+}
+
+#uparrow{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0px;
+    opacity: 1;
+    transition: top 2s, opacity 0.5s;
+}
+
+.abt-me{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 6%;
+}
+
+.img-me{
+    width: 50%;
+    height: 450px;
+    border: solid 7px #282828;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    left: 20%;
+    opacity: 0;
+    transition: left 1s, opacity 1s;
+}
+
+.img{
+    object-fit: cover;
+    /* object-position: bottom; */
+    height: 100%;
+    width: 100%;
+}
+
+.contact-me{
+    position: absolute;
+    bottom: 3%;
+}
+
+.btn-learn{
+    background-color: #282828;
+    color: white;
+    border: 2px solid #282828;
+    border-radius: 50px;
+    transition: background-color 0.5s ease;
+}
+
+.btn-learn:hover{
+    background-color: white;
+    color: #282828;
+    border: 2px solid #282828;
+}
+
+.underline{
+    width: 10%;
+    height: 3px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 3%;
+}
+
+/* SKILLS */
+.card-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.diy-card{
+    background-color: white;
+    color: #282828;
+    width: 350px;
+    height: max-content;
+    border-radius: 15px;
+}
+
+.diy-card-title{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.main-card{
+    padding: 15px;
+    height: max-content;
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.btn-more{
+    border-radius: 15px;
+    background-color: #282828;
+    color: white;
+    border: solid 2px #282828;
+    transition: background-color 0.5s;
+    z-index: 10;
+}
+
+.btn-more:hover{
+    background-color: white;
+    color: #282828;
+}
+
+.skill-1{
+    z-index: 0;
+    position: relative;
+    padding: 15px;
+    margin-top: -147px;
+    transition: margin-top 1s;
+}
+
+.skill-2{
+    z-index: 0;
+    position: relative;
+    padding: 15px;
+    margin-top: -115px;
+    transition: margin-top 1s;
+}
+
+.skill-3{
+    z-index: 0;
+    position: relative;
+    padding: 15px;
+    margin-top: -115px;
+    transition: margin-top 1s;
+}
+
+.background-bar{
+    background-color: lightgray;
+    border-radius: 15px;
+    color: white;
+}
+
+.skill-bar{
+    background-color: #282828;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.skill-text{
+    position: relative;
+    left: 15px;
+    white-space: nowrap;
+}
+
+.skill-percent{
+    position: absolute;
+    right: 10px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+/* SKILL BAR */
+.html-bar{
+    width: 0%;
+    transition: width 2s;
+}
+
+.css-bar{
+    width: 0%;
+    transition: width 2s;
+}
+
+.js-bar{
+    width: 0%;
+    transition: width 2s;
+}
+
+.php-bar{
+    width: 0%;
+    transition: width 2s;
+}
+
+.sql-bar{
+    width: 0%;
+    transition: width 2s;
+}
+
+.ssis-bar{
+    width: 0%;
+    transition: width 2s;
+}
+
+.ssrs-bar{
+    width: 0%;
+    transition: width 2s;
+}
+
+
+/* WORK */
+
+.date-margin{
+    margin-left: 10px;
+}
+
+.work-1{
+    border-left: solid 2px white;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.work-1::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #282828;
+    border: solid 2px white;
+    position: absolute;
+    border-radius: 50px;
+    left: -9px;
+}
+
+.work-1-container{
+    margin-left: 15px;
+}
+
+.work-1-title{
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+    margin-bottom: -7px;
+}
+
+.work-1-date{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.work-1-place{
+    font-size: 13px;
+}
+
+.work-1-content{
+
+}
+
+.work-2{
+    border-left: solid 2px white;
+    position: relative;
+}
+
+.work-2::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: #282828;
+    border: solid 2px white;
+    position: absolute;
+    border-radius: 50px;
+    left: -9px;
+}
+
+.work-2-container{
+    margin-left: 15px;
+}
+
+.work-2-title{
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    top: -10px;
+    margin-bottom: -7px;
+}
+
+.work-2-date{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.work-2-place{
+    font-size: 13px;
+}
+
+.work-2-content{
+
+}
+
+/* PROJECT */
+.project-navigation{
+    display: flex;
+    gap: 20px;
+}
+
+.btn-project{
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+.btn-project:hover{
+    color: red;
+}
+
+.project-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-cards{
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title{
+    position: absolute;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.5s;
+}
+
+.project-pict{
+    object-fit: cover;
+    filter: brightness(100%);
+    transition: filter 0.5s;
+}
+
+.project-cards:hover{
+    .project-pict{
+        filter: brightness(70%);
+    }
+
+    .project-title{
+        opacity: 1;
+    }
+}
+
+.website{
+    transition: transform 1s;
+    display: block;
+}
+
+.api{
+    transition: transform 1s;
+    display: block;
+}
+
+/* CONTACT */
+.send-btn{
+    width: 30%;
+    height: 50px;
+    border-radius: 50px;
+    font-size: larger;
+    border: solid 2px red;
+    background-color: red;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+.send-btn:hover{
+    background-color: white;
+    color: red;
+}

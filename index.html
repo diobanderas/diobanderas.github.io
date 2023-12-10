@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.cdnfonts.com/css/chirota" rel="stylesheet">
+</head>
+<body>
+    <div class="global-width">
+        <div>
+            <div class="gotop" onclick="gotop()"><img src="up-arrow.png" alt="uparrow" id="uparrow"></div>
+            <div class="diy-container" id="home">
+                <div class="diy-container-in">
+                    <div class="abt-me">
+                        <div>
+                            <h2>Hi, <br>i am Dio Banderas</h2>
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam, nulla repellendus dolore ullam rem obcaecati libero provident doloremque fugiat ex dolor architecto dicta dolorum eos mollitia, quod neque nisi porro!
+                            </p>
+                            <button class="btn-learn" onclick="showNext()">Explore more</button>
+                        </div>
+                    </div>
+                    <div class="img-me">
+                        <img src="1697092737399.jpg" alt="dio-photo" class="img">
+                    </div>
+                </div>
+            </div>
+            <div class="diy-container text-white" id="servicing" style="align-items: normal;" >
+                <div class="padd-5">
+                    <h3>What Services I'm Providing?</h3>
+                    <div class="underline"></div>
+                    <div class="row gy-3">
+                        <div class="col-md-4">
+                            <div class="diy-card">
+                                <div class="main-card">
+                                    <div class="diy-card-title">
+                                        Web Development
+                                    </div>
+                                    <div class="diy-card-content mb-3">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus autem perspiciatis rerum modi maiores dolorem. Molestias ipsa repudiandae deserunt maiores amet placeat itaque. Mollitia aspernatur ea in cumque laudantium.
+                                    </div>
+                                    <button class="btn-more" data-id = '1' onclick="showskill(this.getAttribute('data-id'))">More</button>
+                                </div>
+                                <div class="skill-1">
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2 html-bar">
+                                            <small class="skill-text">HTML</small>
+                                            <small class="skill-percent">80%</small>
+                                        </div>
+                                    </div>
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2 css-bar">
+                                            <small class="skill-text">CSS</small>
+                                            <small class="skill-percent">70%</small>
+                                        </div>
+                                    </div>
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2 js-bar">
+                                            <small class="skill-text">JS</small>
+                                            <small class="skill-percent">55%</small>
+                                        </div>
+                                    </div>
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2 php-bar">
+                                            <small class="skill-text">PHP Laravel</small>
+                                            <small class="skill-percent">90%</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="diy-card">
+                                <div class="main-card">
+                                    <div class="diy-card-title">
+                                        Reporting
+                                    </div>
+                                    <div class="diy-card-content mb-3">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus autem perspiciatis rerum modi maiores dolorem. Molestias ipsa repudiandae deserunt maiores amet placeat itaque. Mollitia aspernatur ea in cumque laudantium.
+                                    </div>
+                                    <button class="btn-more" data-id = '2' onclick="showskill(this.getAttribute('data-id'))">More</button>
+                                </div>
+                                <div class="skill-2">
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2 sql-bar">
+                                            <small class="skill-text">SQL Server</small>
+                                            <small class="skill-percent">85%</small>
+                                        </div>
+                                    </div>
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2 ssis-bar">
+                                            <small class="skill-text">SSIS</small>
+                                            <small class="skill-percent">80%</small>
+                                        </div>
+                                    </div>
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2 ssrs-bar">
+                                            <small class="skill-text">SSRS</small>
+                                            <small class="skill-percent">80%</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="diy-card">
+                                <div class="main-card">
+                                    <div class="diy-card-title">
+                                        Web Development
+                                    </div>
+                                    <div class="diy-card-content mb-3">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloribus autem perspiciatis rerum modi maiores dolorem. Molestias ipsa repudiandae deserunt maiores amet placeat itaque. Mollitia aspernatur ea in cumque laudantium.
+                                    </div>
+                                    <button class="btn-more" data-id = '3' onclick="showskill(this.getAttribute('data-id'))">More</button>
+                                </div>
+                                <div class="skill-3">
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2" style="width: 85%;">
+                                            <small class="skill-text">SQL Server</small>
+                                            <small class="skill-percent">85%</small>
+                                        </div>
+                                    </div>
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2" style="width: 80%;">
+                                            <small class="skill-text">SSIS</small>
+                                            <small class="skill-percent">80%</small>
+                                        </div>
+                                    </div>
+                                    <div class="background-bar">
+                                        <div class="skill-bar mb-2" style="width: 80%;">
+                                            <small class="skill-text">SSRS</small>
+                                            <small class="skill-percent">80%</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diy-container text-white" id="work" style="align-items: normal;">
+                <div class="padd-5">
+                    <h3>My Work Experiences</h3>
+                    <div class="underline"></div>
+                    <div class="work-1" id="work-1">
+                        <div class="work-1-container">
+                            <div class="work-1-title">
+                                Database Administrator Internship
+                            </div>
+                            <div class="work-1-date mb-2">
+                                <div class="date-margin">2020</div>
+                            </div>
+                            <div class="work-1-place">
+                                PT. Bank CIMB Niaga, Tbk
+                            </div>
+                            <div class="work-1-content">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat dicta natus laudantium ducimus libero architecto magnam adipisci excepturi dolores! Modi odio ipsum nesciunt labore eum, aspernatur atque eos quas!</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sapiente quae. Voluptatibus, nesciunt enim rem ipsum officiis ducimus placeat sit itaque, aperiam deleniti eos provident explicabo possimus laborum fuga omnis.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis alias dicta, exercitationem ab quaerat eaque aliquid voluptas ad ducimus repudiandae corporis odio, illum nostrum voluptatum facere quisquam aut unde animi.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-2">
+                        <div class="work-2-container">
+                            <div class="work-2-title">
+                                Management Information System Staff
+                            </div>
+                            <div class="work-2-date mb-2">
+                                <div class="date-margin">2022 - Present</div>
+                            </div>
+                            <div class="work-2-place">
+                                PT. A.J. Central Asia Raya
+                            </div>
+                            <div class="work-2-content">
+                                <ul>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum fugiat dicta natus laudantium ducimus libero architecto magnam adipisci excepturi dolores! Modi odio ipsum nesciunt labore eum, aspernatur atque eos quas!</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sapiente quae. Voluptatibus, nesciunt enim rem ipsum officiis ducimus placeat sit itaque, aperiam deleniti eos provident explicabo possimus laborum fuga omnis.</li>
+                                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis alias dicta, exercitationem ab quaerat eaque aliquid voluptas ad ducimus repudiandae corporis odio, illum nostrum voluptatum facere quisquam aut unde animi.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diy-container text-white" style="align-items: normal;">
+                <div class="padd-5">
+                    <h3>Projects Ever Created</h3>
+                    <div class="underline"></div>
+                        <div class="project-navigation">
+                            <h5 class="btn-project" onclick="showAll()">All</h5>
+                            <h5 class="btn-project" onclick="showWeb()">Web</h5>
+                        </div>
+                    <div class="project-content">
+                        <div class="website">
+                            <a href="https://sumbermakmurabadi.com" target="_blank">
+                                <div class="project-cards">
+                                    <div class="project-title">
+                                        Sumber Makmur Abadi
+                                    </div>
+                                    <img src="IMG-20220609-WA0072.jpg" alt="sumbermakmurabadi" width="100%" height="100%" class="project-pict">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="website">
+                            <a href="#" target="_blank">
+                                <div class="project-cards">
+                                    <div class="project-title">
+                                        Barter ID
+                                    </div>
+                                    <img src="people-meeting-barter-event-exchange-goods.jpg" alt="barterid" width="100%" height="100%" class="project-pict">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="website">
+                            <a href="https://diobanderas28.github.io/weather.html" target="_blank">
+                                <div class="project-cards">
+                                    <div class="project-title">
+                                        Weather Check
+                                    </div>
+                                    <img src="blue-sky-with-cloud-closeup.jpg" alt="weathercheck" width="100%" height="100%" class="project-pict">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="diy-container text-white" style="align-items: normal;">
+                <div class="padd-5">
+                    <center><h3 class="mb-5">Contact</h3></center>
+                    <div class="row gy-4">
+                        <div class="col-md-5">
+                            <div class="row gy-3">
+                                <div class="col-md-3">
+                                    <h4>Email</h4>
+                                </div>
+                                <div class="col-md-9">
+                                    diobanderas.job@gmail.com
+                                </div>
+                                <div class="col-md-3">
+                                    <h4>Whatsapp</h4>
+                                </div>
+                                <div class="col-md-9">
+                                    +62 896-7512-6488
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="row gy-3">
+                                <div class="col-md-6">
+                                    <input type="text" placeholder="Name" class="form-control">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="" id="" placeholder="Email" class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <input type="text" placeholder="Subject" class="form-control">
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="Message" class="form-control"></textarea>
+                                </div>
+                                <center><input type="button" value="Send Message" class="send-btn"></center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
